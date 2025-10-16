@@ -57,3 +57,28 @@ fun TataletakBox(modifier: Modifier = Modifier) {
         Text("Ini di dalam Box", fontWeight = FontWeight.Bold)
     }
 }
+
+@Composable
+fun TataletakColumnRow(modifier: Modifier = Modifier) {
+    Column(modifier = modifier.padding(8.dp)) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text("Baris1-Komponen1")
+            Text("Baris1-Komponen2")
+            Text("Baris1-Komponen3")
+        }
+
+        Spacer(Modifier.height(10.dp)) // Initial Spacer height
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text("Baris2-Komponen1")
+            Text("Baris2-Komponen2")
+            Text("Baris2-Komponen3")
+        }
+    }
+}
