@@ -102,3 +102,41 @@ fun TataletakRowColumn(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) { // Fungsi utama yang dipanggil di MainActivity
+    // Asumsi: R.drawable.musik sudah tersedia di folder res/drawable/
+    val gambar = painterResource(id = R.drawable.musik)
+
+    // Layout utama — seluruh konten di tengah layar
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color.White), // Initial background
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(
+            modifier = Modifier
+                .size(300.dp) // area gambar + teks
+                .background(Color.Transparent),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = "Gambar Musik",
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(170.dp) // Initial image size
+            )
+
+            Text(
+                text = "My Music",
+                fontSize = 80.sp, // Initial font size
+                color = Color(0xFF008080), // Initial color (Teal)
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+    }
+}
