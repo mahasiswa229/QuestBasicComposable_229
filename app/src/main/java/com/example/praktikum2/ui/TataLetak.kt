@@ -16,3 +16,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.praktikum2.R // Import R class (resources)
 
+@Composable
+fun TataletakColumn(modifier: Modifier = Modifier) {
+
+    Column(
+        modifier = modifier.padding(16.dp)
+    ) {
+        // Menerapkan warna Navy Blue (0xFF000080)
+        Text("Komponen1", color = Color(0xFF000080))
+        Text("Komponen2", color = Color(0xFF000080))
+        Text("Komponen3", color = Color(0xFF000080))
+        Text("Komponen4", color = Color(0xFF000080))
+    }
+}
