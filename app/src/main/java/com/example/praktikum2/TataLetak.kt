@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.paddingFromBaseline
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -25,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TataletakColumn(modifier: Modifier) {
+fun TataLetakColumn(modifier: Modifier) {
     Column(modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)) {
         Text(text = "kompenen 1")
         Text(text = "komponen 2")
@@ -37,7 +36,7 @@ fun TataletakColumn(modifier: Modifier) {
 }
 
 @Composable
-fun TataletakBox(modifier: Modifier){
+fun TataLetakBox(modifier: Modifier){
     Box(
         modifier = modifier
             .fillMaxHeight()
@@ -52,7 +51,7 @@ fun TataletakBox(modifier: Modifier){
     }
 }
 @Composable
-fun TaataaletakColumnRow(modifier: Modifier){
+fun TataLetakColumnRow(modifier: Modifier){
     Column (){
         //Baris 1
         Row (modifier = modifier.fillMaxWidth(),
@@ -73,7 +72,7 @@ fun TaataaletakColumnRow(modifier: Modifier){
 }
 
 @Composable
-fun TataletakRowColumn(modifier: Modifier){
+fun TataLetakRowColumn(modifier: Modifier){
     Row (modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly){
         // Klolom 1
         Column (){
